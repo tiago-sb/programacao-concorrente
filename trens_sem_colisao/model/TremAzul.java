@@ -96,7 +96,7 @@ public class TremAzul extends Thread{
   public void pararExecucao(){
     this.tremPausado = true;
   }
-
+  
   /*********************************************************************
   * Metodo: controlarPausa
   * Funcao: verifica se o trem esta em movimentacao para coloca-lo 

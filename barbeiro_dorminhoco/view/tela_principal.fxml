@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tela_principal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="botaoReset" fitHeight="109.0" fitWidth="108.0" layoutX="578.0" layoutY="-7.0" onMouseClicked="#botaoResetClicado" onMouseEntered="#mouseEntrouReset" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/reset.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="barbeiro" fitHeight="371.0" fitWidth="381.0" layoutX="183.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/barbeiro_dormindo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cadeira" fitHeight="289.0" fitWidth="361.0" layoutX="198.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cadeira_barbeiro.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="554.0" layoutX="99.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/slider_cliente_barbeiro.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="sliderBarbeiro" layoutX="517.0" layoutY="554.0" onMouseReleased="#mudouVelocidadeBarbeiro" prefHeight="14.0" prefWidth="100.0" />
+      <Slider fx:id="sliderCliente" layoutX="158.0" layoutY="554.0" onMouseReleased="#mudouVelocidadeCliente" prefHeight="14.0" prefWidth="100.0" />
+      <ImageView fx:id="botaoPausePlayCliente" fitHeight="30.0" fitWidth="25.0" layoutX="118.0" layoutY="548.0" onMouseClicked="#botaoPausePlayClienteClicado" onMouseEntered="#mouseEntrouPausePlayCliente" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pause.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="botaoPausePlayBarbeiro" fitHeight="30.0" fitWidth="25.0" layoutX="479.0" layoutY="548.0" onMouseClicked="#botaoPausePlayBarbeiroClicado" onMouseEntered="#mouseEntrouPausePlayBarbeiro" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pause.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

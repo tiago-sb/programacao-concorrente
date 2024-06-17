@@ -80,7 +80,7 @@ public class TelaPrincipalController implements Initializable {
   private static boolean interesseTrilhoSimples02[] = new boolean[2];
   private static int vezTrilhoSimples01_Peterson;
   private static int vezTrilhoSimples02_Peterson;
-
+  
   /* ***************************************************************
   * Metodo: mouseEntrouReset
   * Funcao: modificar o estilo do mouse quando ele entra no reset
