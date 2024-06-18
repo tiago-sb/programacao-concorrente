@@ -122,7 +122,8 @@ public class TelaPrincipalController implements Initializable {
     this.botaoPausePlayClienteClicado(event);
     
     barbeiroThread.voltarBarbeiro();
-
+    novosClientesThread.voltarProdutor();
+    
     Semaforos.reiniciarFila(); 
     Semaforos.reiniciarSemaforos();
   }
