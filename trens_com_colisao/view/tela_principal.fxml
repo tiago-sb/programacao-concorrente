@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tela_principal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="botaoReset" fitHeight="38.0" fitWidth="84.0" layoutX="591.0" layoutY="14.0" onMouseClicked="#botaoResetClicado" onMouseEntered="#mouseEntrouReset" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/reset.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="sliderTremVermelho" layoutX="658.0" layoutY="230.0" orientation="VERTICAL" prefHeight="134.0" prefWidth="14.0" value="2.0" />
+      <Slider fx:id="sliderTremAzul" layoutX="25.0" layoutY="232.0" orientation="VERTICAL" prefHeight="134.0" prefWidth="14.0" value="2.0" />
+      <ImageView fx:id="tremAzul" fitHeight="85.0" fitWidth="29.0" layoutX="285.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/trem_azul.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tremVermelho" fitHeight="85.0" fitWidth="29.0" layoutX="511.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/trem_vermelho.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
