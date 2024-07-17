@@ -62,14 +62,19 @@ public class TremAzul extends Thread{
 
     // setagem da posicao inicial do trem na janela
     if(posicaoEscolhida.equalsIgnoreCase("superior")){
-      this.tremAzul.setLayoutX(390);
-      this.tremAzul.setLayoutY(-50);
-      this.tremAzul.setRotate(0);
+      Platform.runLater(() -> {
+        this.tremAzul.setLayoutX(390);
+        this.tremAzul.setLayoutY(-50);  
+        this.tremAzul.setRotate(0);
+      });
     }
     if(posicaoEscolhida.equalsIgnoreCase("inferior")){
-      this.tremAzul.setLayoutX(390);
-      this.tremAzul.setLayoutY(610);
-      this.tremAzul.setRotate(180);
+      
+      Platform.runLater(() -> {
+        this.tremAzul.setLayoutX(390);
+        this.tremAzul.setLayoutY(610);
+        this.tremAzul.setRotate(180);
+      });
     }
   }
   
@@ -303,11 +308,11 @@ public class TremAzul extends Thread{
               // acende o sinal do trilho simples 01
               this.acenderSinal01();
 
-              this.tremAzul.setRotate(315);
+              Platform.runLater(() -> this.tremAzul.setRotate(315));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(70,"descer");
-              this.tremAzul.setRotate(45);
+              Platform.runLater(() -> this.tremAzul.setRotate(45));
               this.girarTrem(32, "esquerda");
               
               // objeto chamando o metodo para tornar o trilho simples 01 livre para caso alguem queira acessar aquela regiao critica
@@ -315,7 +320,7 @@ public class TremAzul extends Thread{
               // apaga o sinal do trilho simples 01
               this.apagarSinal01();
 
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(95, "descer");
               
               // laco que faz o trem esperar caso alguem esteja utilizando o trilho simples 02
@@ -327,11 +332,11 @@ public class TremAzul extends Thread{
               // acende o sinal do trilho simples 02
               this.acenderSinal02();
 
-              this.tremAzul.setRotate(315);
+              Platform.runLater(() -> this.tremAzul.setRotate(315));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(70, "descer");
-              this.tremAzul.setRotate(45);
+              Platform.runLater(() -> this.tremAzul.setRotate(45));
               this.girarTrem(32, "esquerda");
               
               // objeto chamando o metodo para tornar o trilho simples 02 livre para caso alguem queira acessar aquela regiao critica
@@ -339,7 +344,7 @@ public class TremAzul extends Thread{
               // apaga so sinal do trilho simples 02
               this.apagarSinal02();
 
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(195, "descer");
             }
             // caso onde a solucao escolhida foi a de estrita alternancia
@@ -353,11 +358,11 @@ public class TremAzul extends Thread{
               // acende o sinal de transito do trilho simples 01
               this.acenderSinal01();
 
-              this.tremAzul.setRotate(315);
+              Platform.runLater(() -> this.tremAzul.setRotate(315));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(70,"descer");
-              this.tremAzul.setRotate(45);
+              Platform.runLater(() -> this.tremAzul.setRotate(45));
               this.girarTrem(32, "esquerda");
               
               // apaga o sinal de transito do trilho simples 01
@@ -365,7 +370,7 @@ public class TremAzul extends Thread{
               // modifica o valor da variavel vez permitindo dessa forma que outros possam acessar a regiao critica
               TelaPrincipalController.setVezTrilhoSimples01(1);
 
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(95, "descer");
               
               // laco que faz o trem esperar enquanto nao for a vez dele utilizar o trilho simples 02
@@ -375,11 +380,11 @@ public class TremAzul extends Thread{
               // acende o sinal de transito do trilho simples 02
               this.acenderSinal02();
 
-              this.tremAzul.setRotate(315);
+              Platform.runLater(() -> this.tremAzul.setRotate(315));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(70, "descer");
-              this.tremAzul.setRotate(45);
+              Platform.runLater(() -> this.tremAzul.setRotate(45));
               this.girarTrem(32, "esquerda");
               
               // apaga o sinal de transito do trilho simples 02
@@ -387,7 +392,7 @@ public class TremAzul extends Thread{
               // modifica o valor da variavel vez permitindo dessa forma que outros possam acessar a regiao critica
               TelaPrincipalController.setVezTrilhoSimples02(1);
 
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(195, "descer");
             
             }
@@ -400,11 +405,11 @@ public class TremAzul extends Thread{
               // acende o sinal de transito do trilho simples 01
               this.acenderSinal01();
 
-              this.tremAzul.setRotate(315);
+              Platform.runLater(() -> this.tremAzul.setRotate(315));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(70,"descer");
-              this.tremAzul.setRotate(45);
+              Platform.runLater(() -> this.tremAzul.setRotate(45));
               this.girarTrem(32, "esquerda");
               
               // chama o metodo para o controlar a saida no trilho simples 01
@@ -412,7 +417,7 @@ public class TremAzul extends Thread{
               // apaga o sinal de transito do trilho simples 01
               this.apagarSinal01();
 
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(95, "descer");
               
               // chama o metodo para o controlar a entrada no trilho simples 02
@@ -420,11 +425,11 @@ public class TremAzul extends Thread{
               // acende o sinal de transito do trilho simples 01
               this.acenderSinal02();
 
-              this.tremAzul.setRotate(315);
+              Platform.runLater(() -> this.tremAzul.setRotate(315));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(70, "descer");
-              this.tremAzul.setRotate(45);
+              Platform.runLater(() -> this.tremAzul.setRotate(45));
               this.girarTrem(32, "esquerda");
               
               // chama o metodo para o controlar a saida no trilho simples 02
@@ -432,7 +437,7 @@ public class TremAzul extends Thread{
               // apaga o sinal de transito do trilho simples 02
               this.apagarSinal02();
               
-              this.tremAzul.setRotate(0);
+              Platform.runLater(() -> this.tremAzul.setRotate(0));
               this.movimentarTremY(195, "descer");
             }
 
@@ -452,11 +457,11 @@ public class TremAzul extends Thread{
               // acende o sinal de transito do trilho simples 02
               this.acenderSinal02();
 
-              this.tremAzul.setRotate(225);
+              Platform.runLater(() -> this.tremAzul.setRotate(225));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(75, "subir");
-              this.tremAzul.setRotate(135);
+              Platform.runLater(() -> this.tremAzul.setRotate(135));
               this.girarTrem(32, "esquerda");
 
               // objeto chamando o metodo para tornar o trilho simples 02 livre para caso alguem queira acessar aquela regiao critica
@@ -464,7 +469,7 @@ public class TremAzul extends Thread{
               // apaga o sinal do trilho simples 02
               this.apagarSinal02();
 
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(105, "subir");
               
               // laco que faz o trem esperar caso alguem esteja utilizando o trilho simples 01
@@ -476,11 +481,11 @@ public class TremAzul extends Thread{
               // acende o sinal do trilho simples 01
               this.acenderSinal01();
 
-              this.tremAzul.setRotate(225);
+              Platform.runLater(() -> this.tremAzul.setRotate(225));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(50, "subir");
-              this.tremAzul.setRotate(135);
+              Platform.runLater(() -> this.tremAzul.setRotate(135));
               this.girarTrem(32, "esquerda");
 
               // objeto chamando o metodo para tornar o trilho simples 01 livre para caso alguem queira acessar aquela regiao critica
@@ -488,7 +493,7 @@ public class TremAzul extends Thread{
               // apaga o sinal do trilho simples 01
               this.apagarSinal01();
 
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(175, "subir");
             }
             if(solucaoEscolhida.equals("estrita_alternancia")){
@@ -501,11 +506,11 @@ public class TremAzul extends Thread{
               // acender o sinal do trilho simples 02
               this.acenderSinal02();
 
-              this.tremAzul.setRotate(225);
+              Platform.runLater(() -> this.tremAzul.setRotate(225));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(75, "subir");
-              this.tremAzul.setRotate(135);
+              Platform.runLater(() -> this.tremAzul.setRotate(135));
               this.girarTrem(32, "esquerda");
 
               // apaga o sinal do trilho simples 02
@@ -513,7 +518,7 @@ public class TremAzul extends Thread{
               // modifica o valor da variavel vez permitindo dessa forma que outros possam acessar a regiao critica
               TelaPrincipalController.setVezTrilhoSimples02(1);
 
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(105, "subir");
               
               // laco que faz o trem esperar enquanto nao for a vez dele utilizar o trilho simples 01
@@ -523,11 +528,11 @@ public class TremAzul extends Thread{
               // acende o sinal do trilho simples 01
               this.acenderSinal01();
 
-              this.tremAzul.setRotate(225);
+              Platform.runLater(() -> this.tremAzul.setRotate(225));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(50, "subir");
-              this.tremAzul.setRotate(135);
+              Platform.runLater(() -> this.tremAzul.setRotate(135));
               this.girarTrem(32, "esquerda");
               
               // apaga o sinal do trilho simples 01
@@ -535,7 +540,7 @@ public class TremAzul extends Thread{
               // modifica o valor da variavel vez permitindo dessa forma que outros possam acessar a regiao critica
               TelaPrincipalController.setVezTrilhoSimples01(1);
 
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(175, "subir");
             }
             if(solucaoEscolhida.equals("peterson")){
@@ -546,11 +551,11 @@ public class TremAzul extends Thread{
               // acende o sinal do trilho simples 02
               this.acenderSinal02();
 
-              this.tremAzul.setRotate(225);
+              Platform.runLater(() -> this.tremAzul.setRotate(225));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(75, "subir");
-              this.tremAzul.setRotate(135);
+              Platform.runLater(() -> this.tremAzul.setRotate(135));
               this.girarTrem(32, "esquerda");
 
               // chama o metodo para o controlar a saida no trilho simples 02
@@ -558,7 +563,7 @@ public class TremAzul extends Thread{
               // apaga o sinal do trilho simples 02
               this.apagarSinal02();
 
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(105, "subir");
 
               // chama o metodo para o controlar a entrada no trilho simples 01
@@ -566,13 +571,13 @@ public class TremAzul extends Thread{
               // acende o sinal do trilho simples 01
               this.acenderSinal01();
 
-              this.tremAzul.setRotate(225);
+              Platform.runLater(() -> this.tremAzul.setRotate(225));
               this.girarTrem(32, "direita");
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
               this.movimentarTremY(50, "subir");
-              this.tremAzul.setRotate(135);
+              Platform.runLater(() -> this.tremAzul.setRotate(135));
               this.girarTrem(32, "esquerda");
-              this.tremAzul.setRotate(180);
+              Platform.runLater(() -> this.tremAzul.setRotate(180));
 
               // chama o metodo para o controlar a saida no trilho simples 01
               TelaPrincipalController.saiuTrilhoSimples01(0);
