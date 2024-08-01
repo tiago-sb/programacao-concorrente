@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tela_principal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="botao_resetar" fitHeight="238.0" fitWidth="337.0" layoutX="506.0" layoutY="-89.0" onMouseClicked="#clicouResetar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/reiniciar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="percurso_01" fitHeight="650.0" fitWidth="1010.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/dick_vigarista/percurso_01.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="percurso_16" fitHeight="650.0" fitWidth="1010.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/tio_tomas/percurso_16.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="percurso_17" fitHeight="650.0" fitWidth="1010.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/quadrilha_morte/percurso_17.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="percurso_22" fitHeight="650.0" fitWidth="1010.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/soldado_meekley/percurso_22.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="percurso_19" fitHeight="650.0" fitWidth="1010.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/professor_aereo/percurso_19.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="percurso_09" fitHeight="650.0" fitWidth="1010.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/penelope/percurso_09.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="percurso_02" fitHeight="650.0" fitWidth="1010.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/irmaos_rocha/percurso_02.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="percurso_10" fitHeight="650.0" fitWidth="1010.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/barao_vermelho/percurso_10.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carroca_a_vapor" fitHeight="69.0" fitWidth="26.0" layoutX="651.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../img/tio_tomas/carroca_a_vapor.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carro_tanque" fitHeight="69.0" fitWidth="26.0" layoutX="75.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../img/soldado_meekley/carro_tanque.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carro_a_prova_de_balas" fitHeight="69.0" fitWidth="26.0" layoutX="382.0" layoutY="562.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../img/quadrilha_morte/carro_a_prova_de_balas.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carro_magico" fitHeight="69.0" fitWidth="26.0" layoutX="75.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../img/professor_aereo/carro_magico.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carrinho_pra_frente" fitHeight="69.0" fitWidth="26.0" layoutX="651.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../img/penelope/carrinho_pra_frente.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pedramobil" fitHeight="69.0" fitWidth="26.0" layoutX="651.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../img/irmaos_rocha/pedramobil.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="maquina_do_mal" fitHeight="69.0" fitWidth="26.0" layoutX="26.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../img/dick_vigarista/maquina_do_mal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="maquina_voadora" fitHeight="69.0" fitWidth="26.0" layoutX="68.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../img/barao_vermelho/maquina_voadora.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="sliderDickVigarista" layoutX="817.0" layoutY="28.0" max="10.0" prefHeight="14.0" prefWidth="116.0" value="4.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Slider>
+      <Slider fx:id="sliderIrmaosRocha" layoutX="817.0" layoutY="116.0" max="10.0" prefHeight="14.0" prefWidth="116.0" value="4.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Slider>
+      <Slider fx:id="sliderBaraoVermelho" layoutX="817.0" layoutY="201.0" max="10.0" prefHeight="14.0" prefWidth="116.0" value="4.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Slider>
+      <Slider fx:id="sliderPenelope" layoutX="817.0" layoutY="283.0" max="10.0" prefHeight="14.0" prefWidth="116.0" value="4.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Slider>
+      <Slider fx:id="sliderTioTomas" layoutX="817.0" layoutY="367.0" max="10.0" prefHeight="14.0" prefWidth="116.0" value="4.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Slider>
+      <Slider fx:id="sliderQuadrilhaMorte" layoutX="818.0" layoutY="447.0" max="10.0" prefHeight="14.0" prefWidth="116.0" value="4.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Slider>
+      <Slider fx:id="sliderSoldadoMeekley" layoutX="818.0" layoutY="531.0" max="10.0" prefHeight="14.0" prefWidth="116.0" value="4.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Slider>
+      <Slider fx:id="sliderProfessorAereo" layoutX="817.0" layoutY="617.0" max="10.0" prefHeight="14.0" prefWidth="116.0" value="4.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Slider>
+      <ImageView fx:id="pause_play_percurso_01" fitHeight="29.0" fitWidth="26.0" layoutX="936.0" layoutY="23.0" onMouseClicked="#clicouPausePlayDickVigarista" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dick_vigarista/pause.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="ver_percurso_01" fitHeight="29.0" fitWidth="26.0" layoutX="966.0" layoutY="23.0" onMouseClicked="#clicouVisualizarDickVigarista" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dick_vigarista/ver_percurso.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="pause_play_percurso_02" fitHeight="29.0" fitWidth="26.0" layoutX="936.0" layoutY="111.0" onMouseClicked="#clicouPausePlayIrmaosRocha" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/irmaos_rocha/pause.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="ver_percurso_02" fitHeight="29.0" fitWidth="26.0" layoutX="966.0" layoutY="111.0" onMouseClicked="#clicouVisualizarIrmaosRocha" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/irmaos_rocha/ver_percurso.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="pause_play_percurso_10" fitHeight="29.0" fitWidth="26.0" layoutX="936.0" layoutY="194.0" onMouseClicked="#clicouPausePlayBaraoVermelho" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/barao_vermelho/pause.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="ver_percurso_10" fitHeight="29.0" fitWidth="26.0" layoutX="966.0" layoutY="194.0" onMouseClicked="#clicouVisualizarBaraoVermelho" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/barao_vermelho/ver_percurso.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="pause_play_percurso_09" fitHeight="29.0" fitWidth="26.0" layoutX="936.0" layoutY="277.0" onMouseClicked="#clicouPausePlayPenelope" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/penelope/pause.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="ver_percurso_09" fitHeight="29.0" fitWidth="26.0" layoutX="966.0" layoutY="277.0" onMouseClicked="#clicouVisualizarPenelope" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/penelope/ver_percurso.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="pause_play_percurso_16" fitHeight="29.0" fitWidth="26.0" layoutX="936.0" layoutY="362.0" onMouseClicked="#clicouPausePlayTioTomas" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tio_tomas/pause.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="ver_percurso_16" fitHeight="29.0" fitWidth="26.0" layoutX="966.0" layoutY="362.0" onMouseClicked="#clicouVisualizarTioTomas" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tio_tomas/ver_percurso.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="pause_play_percurso_17" fitHeight="29.0" fitWidth="26.0" layoutX="935.0" layoutY="443.0" onMouseClicked="#clicouPausePlayQuadrilhaMorte" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/quadrilha_morte/pause.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="ver_percurso_17" fitHeight="29.0" fitWidth="26.0" layoutX="966.0" layoutY="443.0" onMouseClicked="#clicouVisualizarQuadrilhaMorte" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/quadrilha_morte/ver_percurso.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="pause_play_percurso_22" fitHeight="29.0" fitWidth="26.0" layoutX="936.0" layoutY="526.0" onMouseClicked="#clicouPausePlaySoldadoMeekley" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/soldado_meekley/pause.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="ver_percurso_22" fitHeight="29.0" fitWidth="26.0" layoutX="966.0" layoutY="526.0" onMouseClicked="#clicouVisualizarSoldadoMeekley" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/soldado_meekley/ver_percurso.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="pause_play_percurso_19" fitHeight="29.0" fitWidth="26.0" layoutX="936.0" layoutY="611.0" onMouseClicked="#clicouPausePlayProfessorAereo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/professor_aereo/pause.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="ver_percurso_19" fitHeight="29.0" fitWidth="26.0" layoutX="966.0" layoutY="611.0" onMouseClicked="#clicouVisualizarProfessorAereo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/professor_aereo/ver_percurso.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
